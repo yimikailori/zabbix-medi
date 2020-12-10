@@ -12,6 +12,13 @@ FIXME: explanation
 
     $ java -jar zbx-medi-0.1.0-standalone.jar [args]
 
+    export PORT=2021
+    export pg-url=http://10.152.190.94:8913/topupservice/service?wsdl
+    export pg-xml=/Users/yimika/Documents/IdeaProjects/zbx-medi/pg-xml.xml
+    export rbmqport=5672
+
+    java -Dlogback.configurationFile=/Users/yimika/Documents/IdeaProjects/zbx-medi/logback.xml -cp /Users/yimika/Documents/IdeaProjects/zbx-medi/target/zbx-medi.jar zbx_medi.core
+
 ## Options
 
 FIXME: listing of options this app accepts.

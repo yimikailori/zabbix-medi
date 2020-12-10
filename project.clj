@@ -21,6 +21,9 @@
                  [seancorfield/next.jdbc "1.1.613"]
                  [com.zaxxer/HikariCP "3.3.1"]
                  [com.stuartsierra/component "1.0.0"]
+
+                 [org.clojure/data.xml "0.2.0-alpha6"]
+                 [org.clojure/data.zip "1.0.0"]
                  ]
   :plugins [[lein-ring "0.12.5"]
             [compojure "1.6.1"]]

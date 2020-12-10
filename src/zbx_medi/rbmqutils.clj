@@ -90,8 +90,8 @@
 	(let [queues [(reset! zbx-details {
 																		 :host     "127.0.0.1"
 																		 :port     (or (Integer/parseInt (System/getenv "rbmqport")) 5672)
-																		 :username (or (System/getenv "rbmqusername") "guest")
-																		 :password (or (System/getenv "rbmqpassword") "guest")
+																		 :username "guest"
+																		 :password "guest"
 																		 :vhost    "/"
 																		 :conn            (atom nil)
 																		 :channel         (atom nil)
