@@ -12,3 +12,6 @@ pom.xml.asc
 .idea
 /doc
 /env
+.lsp
+/target
+.calva

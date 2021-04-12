@@ -90,6 +90,14 @@
                                                body (slurp (:body request))
                                               resp (rbmq/process-notification body)]
                                           (make-response resp)))
+           (GET "/jira/notify" request (let [params (:params request)
+                                             _ (log/infof "GET Params %s" params)
+                                             resp (rbmq/process-jira-notification params)]
+                                           (make-response resp)))
+           (POST "/jira/notify" request (let [_ (log/infof "POST request %s" request)
+                                               body (slurp (:body request))
+                                              resp (rbmq/process-jira-notification body)]
+                                          (make-response resp)))
            (route/not-found (json/write-str {:message "Page Not Found"})))
 
 (def apimethod

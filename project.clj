@@ -1,4 +1,4 @@
-(defproject zbx-medi "0.1.0-SNAPSHOT"
+(defproject zbx-medi "0.1.1-SNAPSHOT"
   :description "FIXME: write description"
   :url "http://example.com/FIXME"
   :min-lein-version "2.0.0"
@@ -30,7 +30,7 @@
   :ring {:handler zbx-medi.core/app}
   :profiles {:uberjar {:omit-source    true
                        :aot            :all
-                       :uberjar-name   "zbx-medi.jar"
+                       :uberjar-name   "zbx-medi-1.1.jar"
                        :source-paths   ["env/prod/clj"]
                        :resource-paths ["env/prod/resources"]
                        }
